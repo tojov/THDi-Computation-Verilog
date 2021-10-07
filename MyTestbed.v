@@ -325,7 +325,7 @@ SIPO SIPOr(
 .d_out16(d_outr16), .d_out17(d_outr17), .d_out18(d_outi18), .d_out19(d_outr19), .d_out20(d_outr20), .d_out21(d_outr21), .d_out22(d_outr22), .d_out23(d_outr23), .d_out24(d_outr24), 
 .d_out25(d_outr25), .d_out26(d_outr26), .d_out27(d_outi27), .d_out28(d_outr28), .d_out29(d_outr29), .d_out30(d_outr30), .d_out31(d_outr31),
 .done(sipor_done)
-);
+); //to sample incoming 32 serial 16-bit dout_r to SIPOr
 
 SIPO SIPOi(
 .clk(clk),
@@ -336,7 +336,7 @@ SIPO SIPOi(
 .d_out16(d_outi16), .d_out17(d_outi17), .d_out18(d_outi18), .d_out19(d_outi19), .d_out20(d_outi20), .d_out21(d_outi21), .d_out22(d_outi22), .d_out23(d_outi23), .d_out24(d_outi24), 
 .d_out25(d_outi25), .d_out26(d_outi26), .d_out27(d_outi27),.d_out28(d_outi28), .d_out29(d_outi29), .d_out30(d_outi30), .d_out31(d_outi31),
 .done(sipoi_done)
-);
+); //to sample 32 incoming serial 16 bit dout_i from FFT_CORE to SIPOi
 
 endmodule
 
