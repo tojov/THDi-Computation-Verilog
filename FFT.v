@@ -15,11 +15,12 @@ input rst_n,
 input in_valid,
 input signed [11:0] din_r,
 input signed [11:0] din_i,
-output out_valid,
+output out_valid, 
 output reg signed [15:0] dout_r,
 output reg signed [15:0] dout_i
 );
-
+ // SIPO to be used to store 32 serial 16-bit dout_r and dout_i
+//out_valid to be used as flag for sipo module
 integer i;
 reg signed  [15:0] result_r[0:31];
 reg signed  [15:0] result_i[0:31];
